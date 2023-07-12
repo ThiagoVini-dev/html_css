@@ -12,12 +12,21 @@
             border: 1px solid black;
             border-collapse: collapse;
             width: 400px;
-            
+            height: 300px;
+            position: relative;
         }
         caption{
             font-size: 1.5em;
             font-weight: bold;
             background-color: lightgray;
+        }
+        tbody > tr:nth-child(even){ /* odd = ímpar, even = par*/
+            background-color: lightblue;
+        }
+        thead > tr > th { /* seletor destinado a congelar cabeçalho*/
+            position: sticky;
+            top: 0;
+            background-color: black;
         }
         td{
             border: 1px solid black;
@@ -48,22 +57,54 @@
         <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th scope="col">Estados</th>
-                <th scope="col">População</th>
+                <th scope="col">Alunos</th>
+                <th scope="col">Notas</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>São Paulo</td>
-                <td>45.919.049</td>
+                <td> Paulo</td>
+                <td>10</td>
             </tr>
             <tr>
-                <td>Minas Gerais</td>
-                <td>21.168.791</td>
+                <td>Joana</td>
+                <td>5</td>
             </tr>
             <tr>
-                <td>Rio de Janeiro</td>
-                <td>17.264.943</td>
+                <td>Rogério</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Tomás</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Ivanilde</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <td>Joel</td>
+                <td>7.8</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>6.5</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>8.4</td>
+            </tr>
+            <tr>
+                <td>Rodrigo</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Pamela</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>9.2</td>
             </tr>
         </tbody>
         <tfoot>
