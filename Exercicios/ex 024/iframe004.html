@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação no iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ullam quis. Laborum voluptatum quia adipisci velit obcaecati? Veniam aut nobis dignissimos error similique dolor. Ad ipsam doloremque eveniet libero consequatur?</p>
+    <ul>
+        <li><a href="paginasextra/pagina001.html" target="frame">Página 1</a></li>
+        <li><a href="paginasextra/tabelasresponsivas.html" target="frame">Página 2</a></li>
+        <li><a href="paginasextra/pagina002.html" target="frame">Página 3</a></li>
+        <!--para essa exibição de link funcionar, precisa usar name no iframe-->
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum et autem, vitae incidunt magnam deserunt voluptatum voluptate ipsum explicabo facilis cumque quibusdam! Laudantium non vitae placeat provident laborum neque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ad maxime eveniet, esse, fugit sint porro in neque pariatur quam natus quos harum cumque saepe iure veritatis perferendis eius delectus?</p>
+    <iframe src="" name="frame"> <p>Infelizmente seu navegador não é compatível</p></iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, repellendus. Quod veritatis amet accusantium quidem doloribus recusandae voluptatem id laboriosam, iure sed provident, necessitatibus saepe quas magnam aperiam iste eaque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus perspiciatis eius sequi quia qui nihil sit aliquam placeat illo nobis quam, hic recusandae laudantium ut. Accusamus minima voluptas asperiores placeat.</p>
+</body>
+</html>
