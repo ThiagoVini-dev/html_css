@@ -10,11 +10,26 @@
         }
     </style>
 </head>
+<!--FORMULÁRIO  
+    a lable name é mais compatível com a linguagem php
+    e a lable id é mais compatível com a linguagem javascript 
+  MÉTODOS GET E POST
+  get para dados não sensíveis como idade, peso e altura 
+  get para url's compartiháveis
+  get envia até 3 mil bytes de informações(limite)
+  post para dados sensíveis e aprender https
+  post para dados com mais de 3 mil bytes
+-->
+    
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobre" id="sobre"></p>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <label for="inome">
+            <p>Nome: <input type="text" name="nome" id="inome"></p>
+        </label>
+        <label for="isobre">
+            <p>Sobrenome: <input type="text" name="sobre" id="isobre"></p>
+        </label>
         <input type="submit" value="Enviar">
     </form>
 </body>
