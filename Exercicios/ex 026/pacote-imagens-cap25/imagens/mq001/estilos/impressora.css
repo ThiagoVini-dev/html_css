@@ -1,1 +1,16 @@
 @charset "utf-8";
+*{
+    margin: 10px;
+    padding: 10px;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+menu{
+    display: none;
+}
+article::after{
+    content: 'Esse artigo foi impresso pelo Github pessoal de um dos alunos do Curso em Vídeo';
+}
