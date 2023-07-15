@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <!--
+                    -COLOCA-SE O NAME IGUAL PARA DUAS OU MAIS OPÇÕES PARA IDENTIFICAR QUE ESTÃO 
+                    NO MESMO FIELDLSET, E, ASSIM, ACEITAR APENAS A MARCAÇÃO DE UM POR VEZ
+                    -USE CHECKED PARA DEIXAR UM OPÇÃO JÁ MARCADA AO INICIAR O FORMULÁRIO
+                -->
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc" >Masculino</label>
+                <input type="radio" name="sexo" id="ifem" value="F"> <label for="ifem">Feminino</label>
+            </fieldset>
+            <fieldset>
+                <!--
+                    LABEL SERVE PARA VINCULAR A PALAVRA A SUA CAIXA DE PREENCHIMENTO
+                -->
+                <legend>Esportes Favoritos</legend>
+                <label for="isoccer"><input type="checkbox" name="soccer" id="isoccer"> Soccer  <br></label>
+                <label for="ibase"><input type="checkbox" name="base" id="ibase"> Baseball <br></label>
+                <label for="ivolei"><input type="checkbox" name="volei" id="ivolei"> Voleiball <br></label>
+                <label for="ifoot"><input type="checkbox" name="foot" id="ifoot"> Football <br></label>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        
+    </form>
+</body>
+</html>
