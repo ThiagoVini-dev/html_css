@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <p>
+                <!--
+                    USE SELECTED PARA INDICAR UMA OPÇÃO QUE DESEJA QUE ESTEJA SELECIONADA
+                    POR PADRÃO
+                -->
+                <label for="iest">Estado: </label>
+                <select name="Estado" id="iest">
+                    <optgroup label="Região Sudeste"> 
+                        <option value="" selected>---Escolha---</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="PR">Paraná</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="PE">Pernambuco</option>
+                        <option value="MA">Maranhão</option>
+                    </optgroup>
+                </select>
+                <p>
+                    <label for="iprof">Profissão</label>
+                    <input type="text" name="profissão" id="iprof" list="listprofi">
+                    <datalist id="listprofi">
+                        <option value="ADM">Administrador</option>
+                        <option value="DEV">Desenvolvedor</option>
+                        <option value="CONT">Contador</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="imsg">Mensagem</label>
+                    <textarea name="mensagem" id="imsg" cols="30" rows="10"></textarea>
+                </p>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
