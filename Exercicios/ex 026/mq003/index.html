@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /*DECLARAÇÕES GERAIS*/
+                    *{
+                margin: 0px;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            html, body{
+                width: 100vw;
+                height: 100vh;
+                background-color: blue;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            h1{
+                color: white;
+                text-shadow: 3px 3px 3px black;
+                padding: 10px;
+            }
+                    /*DECLARAÇÕES RETRATO*/
+                  @media screen and (orientation:portrait) {
+                    
+                  
+                    body{
+                background-color: green;
+                background: url(../imgs02/cev-portrait.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+                                                            }
+                    /*DECLARAÇÕES PAISAGEM*/
+                    @media screen and (orientation:landscape) {
+                        
+                    
+                    body{
+                background-color: yellow;
+                background: url(../imgs02/cev-landscape.jpg);
+                background-position: left bottom;
+            }
+                                                            }
+    </style>
+    <!--
+        Ao informar media queries, podemos informar features na mesma linha adicionando AND +
+        a orientação da media (portrait or landscape) sempre entre parênteses
+    -->
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+</body>
+</html>
