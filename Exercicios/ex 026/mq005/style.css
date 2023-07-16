@@ -31,6 +31,7 @@ menu > ul >  a{
 }
 menu > ul >  a:hover{
     background-color: lightgray;
+    color: black;
 }
 main{
     width: 90vw;
@@ -50,4 +51,16 @@ article{
 }
 p{
     margin-bottom: 10px;
+}
+span#burguer{
+    display: block;
+    text-align: center;
+    background-color: rgb(76, 75, 75);
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+}
+span#burguer:hover{
+    background-color: white;
+    color: black;
 }
